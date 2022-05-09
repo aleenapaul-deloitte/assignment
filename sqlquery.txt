@@ -1,0 +1,7 @@
+
+create table EXPENSE (EID INTEGER not null primary key, AMOUNT MONEY)
+create table DEPT (DEPTNO VARCHAR (10) primary key, DEPT_NAME CHAR(20) foreign key (DEPTNO) references (DEPT (DEPTNO))
+create table TRIP (TNO INTEGER primary key, FROM_CITY CHAR (20), TO_CITY CHAR (20), DEPARTURE_DATE DATE, RETURN DATE)
+insert into expense values (5,15000)
+create table SALESMAN (SNO INTEGER primary key, S_NAME CHAR (30), START_YEAR DATE, DEPTNO VARCHAR (10) foreign key (DEPTNO) references (DEPT (DEPTNO)
+select * from expense where Amount > 10000
